@@ -1,0 +1,130 @@
+{
+  "input_dataset": "/Users/vicky/Downloads/Test pipeline/AAAI submission/datasets/raw/cryptospec_dataset.jsonl",
+  "dataset_manifest": "/Users/vicky/Downloads/Test pipeline/AAAI submission/datasets/manifests/dataset_manifest_family_holdout_v1.json",
+  "seed": 42,
+  "test_size": 0.1,
+  "val_size": 0.1,
+  "selected_unseen_ciphers": [
+    "lea",
+    "rectangle",
+    "xtea"
+  ],
+  "counts": {
+    "full_dataset": 1084,
+    "seen_pool_after_exclusion": 958,
+    "heldout_unseen_examples": 126,
+    "train": 766,
+    "val": 96,
+    "test": 96
+  },
+  "family_split_report": {
+    "ARX": {
+      "count": 344,
+      "train": 276,
+      "val": 34,
+      "test": 34
+    },
+    "Feistel": {
+      "count": 338,
+      "train": 270,
+      "val": 34,
+      "test": 34
+    },
+    "Permutation": {
+      "count": 48,
+      "train": 38,
+      "val": 5,
+      "test": 5
+    },
+    "Permutation/AEAD": {
+      "count": 40,
+      "train": 32,
+      "val": 4,
+      "test": 4
+    },
+    "SPN": {
+      "count": 188,
+      "train": 150,
+      "val": 19,
+      "test": 19
+    }
+  },
+  "train_family_counts": {
+    "ARX": 276,
+    "Feistel": 270,
+    "Permutation": 38,
+    "Permutation/AEAD": 32,
+    "SPN": 150
+  },
+  "val_family_counts": {
+    "ARX": 34,
+    "Feistel": 34,
+    "Permutation": 5,
+    "Permutation/AEAD": 4,
+    "SPN": 19
+  },
+  "test_family_counts": {
+    "ARX": 34,
+    "Feistel": 34,
+    "Permutation": 5,
+    "Permutation/AEAD": 4,
+    "SPN": 19
+  },
+  "train_cipher_counts": {
+    "ASCON": 38,
+    "GIFT": 36,
+    "GIFT-COFB": 32,
+    "HIGHT": 29,
+    "PRESENT": 43,
+    "SIMECK": 55,
+    "SIMON": 186,
+    "SKINNY": 71,
+    "SPARX": 78,
+    "cham": 58,
+    "speck": 140
+  },
+  "val_cipher_counts": {
+    "ASCON": 5,
+    "GIFT": 7,
+    "GIFT-COFB": 4,
+    "HIGHT": 5,
+    "PRESENT": 2,
+    "SIMECK": 4,
+    "SIMON": 25,
+    "SKINNY": 10,
+    "SPARX": 9,
+    "cham": 8,
+    "speck": 17
+  },
+  "test_cipher_counts": {
+    "ASCON": 5,
+    "GIFT": 5,
+    "GIFT-COFB": 4,
+    "HIGHT": 2,
+    "PRESENT": 3,
+    "SIMECK": 13,
+    "SIMON": 19,
+    "SKINNY": 11,
+    "SPARX": 12,
+    "cham": 9,
+    "speck": 13
+  },
+  "train_tier_counts": {
+    "T1": 208,
+    "T2": 192,
+    "T3": 108,
+    "T4": 258
+  },
+  "val_tier_counts": {
+    "T1": 31,
+    "T2": 15,
+    "T3": 15,
+    "T4": 35
+  },
+  "test_tier_counts": {
+    "T1": 19,
+    "T2": 29,
+    "T3": 13,
+    "T4": 35
+  }
+}

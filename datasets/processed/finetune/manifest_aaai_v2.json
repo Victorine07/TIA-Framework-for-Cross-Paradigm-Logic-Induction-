@@ -1,0 +1,77 @@
+{
+  "tag": "aaai_v2",
+  "timestamp": "20260625_105607",
+  "registry_path": "/Users/vicky/Downloads/Test pipeline/AAAI submission/datasets/processed/eval_registry_family_holdout_v1.json",
+  "metadata_strategy": "none",
+  "requested_splits": [
+    "train",
+    "val"
+  ],
+  "limit": null,
+  "splits": {
+    "train": {
+      "output_file": "train_sft_none.jsonl",
+      "raw_examples": 766,
+      "usable_records": 766,
+      "dropped_empty_target": 0,
+      "by_family": {
+        "ARX": 276,
+        "Feistel": 270,
+        "Permutation": 38,
+        "Permutation/AEAD": 32,
+        "SPN": 150
+      },
+      "by_cipher": {
+        "ASCON": 38,
+        "GIFT": 36,
+        "GIFT-COFB": 32,
+        "HIGHT": 29,
+        "PRESENT": 43,
+        "SIMECK": 55,
+        "SIMON": 186,
+        "SKINNY": 71,
+        "SPARX": 78,
+        "cham": 58,
+        "speck": 140
+      },
+      "by_tier": {
+        "T1": 208,
+        "T2": 192,
+        "T3": 108,
+        "T4": 258
+      }
+    },
+    "val": {
+      "output_file": "val_sft_none.jsonl",
+      "raw_examples": 96,
+      "usable_records": 96,
+      "dropped_empty_target": 0,
+      "by_family": {
+        "ARX": 34,
+        "Feistel": 34,
+        "Permutation": 5,
+        "Permutation/AEAD": 4,
+        "SPN": 19
+      },
+      "by_cipher": {
+        "ASCON": 5,
+        "GIFT": 7,
+        "GIFT-COFB": 4,
+        "HIGHT": 5,
+        "PRESENT": 2,
+        "SIMECK": 4,
+        "SIMON": 25,
+        "SKINNY": 10,
+        "SPARX": 9,
+        "cham": 8,
+        "speck": 17
+      },
+      "by_tier": {
+        "T1": 31,
+        "T2": 15,
+        "T3": 15,
+        "T4": 35
+      }
+    }
+  }
+}
