@@ -110,8 +110,3 @@ Three domain-specific metrics evaluate formal translation quality:
 
 Scores ≥ 0.85 are classified as **verification-ready**.
 
----
-
-## License
-
-Code and dataset released under the MIT License. See `LICENSE` for details.
