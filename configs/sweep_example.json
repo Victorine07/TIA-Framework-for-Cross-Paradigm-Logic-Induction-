@@ -1,0 +1,53 @@
+{
+  "tag": "metadata_ablation_example",
+  "runs": [
+    {
+      "name": "qwen_zeroshot_none",
+      "mode": "zero_shot",
+      "model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+      "dataset": "test",
+      "metadata_strategy": "none",
+      "extra_args": {"load_in_4bit": true, "limit": 20}
+    },
+    {
+      "name": "qwen_zeroshot_structured",
+      "mode": "zero_shot",
+      "model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+      "dataset": "test",
+      "metadata_strategy": "structured",
+      "extra_args": {"load_in_4bit": true, "limit": 20}
+    },
+    {
+      "name": "qwen_fewshot_k3_none",
+      "mode": "few_shot",
+      "model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+      "dataset": "test",
+      "metadata_strategy": "none",
+      "few_shot_k": 3,
+      "few_shot_policy": "same_family",
+      "few_shot_source": "train",
+      "extra_args": {"load_in_4bit": true, "limit": 20}
+    },
+    {
+      "name": "qwen_finetuned_none",
+      "mode": "finetuned",
+      "base_model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+      "adapter_path": "checkpoints/REPLACE_WITH_REAL_RUN_NAME/adapter",
+      "dataset": "test",
+      "metadata_strategy": "none",
+      "extra_args": {
+        "load_in_4bit": true,
+        "limit": 20,
+        "checkpoint_selection_note": "REPLACE_ME - e.g. best val loss at epoch 2"
+      }
+    },
+    {
+      "name": "deepseek_zeroshot_none",
+      "mode": "zero_shot",
+      "model": "deepseek-ai/DeepSeek-Coder-V2-Lite-Instruct",
+      "dataset": "test",
+      "metadata_strategy": "none",
+      "extra_args": {"load_in_4bit": true, "trust_remote_code": true, "limit": 20}
+    }
+  ]
+}
